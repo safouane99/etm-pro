@@ -1,0 +1,127 @@
+/* Reset and Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    position: relative; /* Ensure body has relative positioning for absolute footer */
+    min-height: 100vh; /* Set minimum height of body to 100% viewport height */
+    padding-bottom: 50px; /* Ensure space below the courses section */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Courses Section Styles */
+#courses {
+    padding: 20px 0;
+}
+
+.course {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center; /* Center align content within each course */
+}
+
+.course img {
+    max-width: 100%; /* Ensure images do not exceed their container width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 400px; /* Limit images to a maximum width of 400px on larger screens */
+    margin-bottom: 15px; /* Add space below each image */
+}
+
+.course h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.course p {
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+    background-color: orange;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; /* Add space between courses and footer */
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust container width for smaller screens */
+    }
+
+    .course img {
+        max-width: 100%; /* Ensure images occupy full width on smaller screens */
+        max-width: 300px; /* Limit image width to 300px on smaller screens */
+    }
+}

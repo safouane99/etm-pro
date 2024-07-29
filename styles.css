@@ -1,0 +1,134 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full height of viewport */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: orange;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    position: relative; /* Ensure header is positioned relative for absolute positioning of logo */
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    list-style: none;
+    float: right;
+}
+
+header ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+/* Logo Styles */
+.logo {
+    float: left; /* Float logo to the left */
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+.logo img {
+    width: 175px; /* Adjust width of logo */
+    height: 175px; /* Maintain aspect ratio */
+}
+
+/* Hero Section Styles */
+#hero {
+    background: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#hero .btn {
+    display: inline-block;
+    background: #e67e22;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#hero .btn:hover {
+    background-color: #d35400;
+}
+
+/* Video Section Styles */
+video {
+    max-width: 100%; /* Ensure the video does not exceed its container's width */
+    height: 500px; /* Maintain aspect ratio */
+    display: block; /* Ensures the video is treated as a block element */
+    margin: 0 auto; /* Centers the video horizontally */
+}
+
+/* Additional Sections Styles (Courses, About, Testimonials, Contact) */
+/* Add your styles for other sections as needed */
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
